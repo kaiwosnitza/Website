@@ -1,0 +1,263 @@
+
+body {
+    font-family: 'Source Sans Pro',Arial,sans-serif;
+    font-size: 16px;
+    color: #89949C;
+    letter-spacing: .01em;
+    overflow-x: hidden;
+    word-wrap: break-word;
+	margin: 0;
+}
+
+#main-content{
+	position: relative;
+	background: #fff;
+	box-shadow: 0 -5px 5px rgba(0,0,0,.2);
+	z-index: 10;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+#home .row {
+	margin:0;
+	position: absolute;
+	width:100%;
+	left:0;
+	top:15%;
+}
+
+/*-----------------------
+---- Navigation ----
+-------------------------*/
+
+.navbar {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    position: relative;
+}
+
+.navbar-header {
+    float: left;
+}
+
+.navbar-right {
+    height: 0;
+    overflow: hidden;
+    float: right;
+    position: absolute;
+/*
+    width: 100%;
+    text-align: center;
+    margin-top: 3em;
+    list-style: none;
+    -webkit-transition: height 0.4s ease-in-out;
+    transition: height 0.4s ease-in-out;
+*/
+}
+
+.navbar-right.toggled {
+    height: 200px;
+}
+
+.navbar-toggle {
+    float: right;
+    font-size: 1.4em;
+    display: block;
+}
+
+@media (min-width: 992px) {
+    .navbar-toggle {
+        display: none;
+    }
+    .navbar-right {
+        position: relative;
+        height: auto;
+        width: auto;
+        text-align: left;
+        margin: 0;
+    }
+    .nav > li {
+        display: inline-block
+    }
+}
+
+/* Header Styles */
+
+#mainHead {
+    position: relative;
+    height: 100%;
+    min-height: 860px;
+    background: url(../images/header-bg.png) no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-size: cover;
+    overflow: hidden;
+}
+
+/*-----------------------
+---- Button Styles ----
+-------------------------*/
+
+
+
+/*-----------------------
+---- Club Styles ----
+-------------------------*/
+
+#projects-container .project-item {
+    display: block;
+    position: relative;
+    margin: 0;
+    padding: 0 1px;
+    margin-bottom: 2px;
+    overflow: hidden;
+    cursor: pointer;
+    background: #fff;
+}
+
+#projects-container {
+	margin: 0 0 80px;
+	background:#fff;
+}
+
+.img-responsive {
+  	display: block;
+  	max-width: 100%;
+  	height: auto;
+}
+
+.hover-title:before {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #00CCCB;
+    opacity: .9;
+    z-index: -1;
+}
+
+.hover-title {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    padding: 20px 0;
+    text-align: center;
+    color: #fff;
+    z-index: 2;
+    opacity: 0;
+}
+
+.hover-title h2 {
+    position: absolute;
+    width: 100%;
+    bottom: 50%;
+    margin: 0 0 10px;
+    font-size: 21px;
+    line-height: 21px;
+    color: #fff;
+}
+
+h2 {
+    font-family: inherit;
+    font-weight: 500;
+}
+
+.big-padding {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+@media (max-width: 767px) {
+	.big-padding {
+		padding: 80px 0;
+	}
+}
+
+.lead{
+	margin-bottom: 30px;
+	font-size: 28px;
+	font-weight: 300;
+	color: #39444C;
+}
+
+/*-----------------------
+---- Container ----
+-------------------------*/
+
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+/*    max-width: 95%;*/
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px){
+	.container {
+		width: 970px;
+	}
+}
+
+@media (min-width: 1200px){
+	.container {
+		width: 1170px;
+	}
+}
+
+@media (min-width: 1500px){
+	.container {
+		width: 1500px;
+	}
+}
+
+/*-----------------------
+---- Media Queries ----
+-------------------------*/
+
+@media (max-width: 767px) {
+	.project-item {
+		max-width: 360px;
+		margin: 2px auto !important;
+	}
+}
+
+@media (min-width: 768px) {
+	.col-sm-6 {
+    	width: 50%;
+		float: left;
+	}
+}
+
+@media (min-width: 992px) {
+	.col-md-4 {
+		width: 33.33333333%;
+		float: left;
+	}
+}
+
+@media (min-width: 1200px) {
+	.col-lg-3 {
+		width: 25%;
+		float: left;
+	}
+}
+
+.col-lg-3 .col-md-4 .col-sm-6 {
+	position: relative;
+    min-height: 1px;
+}
